@@ -1,0 +1,16 @@
+# =====================================================
+# robots.txt — PMR Studio
+# Nota: robots.txt NO es seguridad. Solo guía crawlers.
+# =====================================================
+
+User-agent: *
+Disallow: /docs/
+Disallow: /copy/
+Disallow: /changelog.md
+Disallow: /*.md$
+Disallow: /*.bak$
+Disallow: /*.old$
+Disallow: /*.tmp$
+Disallow: /*.log$
+
+Sitemap: https://pmrstudio.site/sitemap.xml
