@@ -120,7 +120,7 @@
     const tiers = Array.from(document.querySelectorAll("#tiers .tier"));
     return tiers.map(tier => {
       const title = (tier.querySelector("h3")?.textContent || "").trim();
-      const priceText = (tier.querySelector(".price")?.textContent || "").replace(/\s+/g,"").trim(); // e.g. "$20/hour"
+      const priceText = (tier.querySelector(".price")?.textContent || "").replace(/\s+/g," ").trim(); // e.g. "$25/hour"
       return { title, priceText };
     }).filter(x => x.title || x.priceText);
   }
@@ -138,8 +138,8 @@
   function readContact(){
     const emailA = document.querySelector("a[href^='mailto:']");
     const waA = document.querySelector("a[href^='https://wa.me/']");
-    const email = emailA ? emailA.getAttribute("href").replace(/^mailto:/i,"").trim() : "info@pmr-studio.com";
-    const wa = waA ? waA.getAttribute("href").trim() : "https://wa.me/5492612593729";
+    const email = emailA ? emailA.getAttribute("href").replace(/^mailto:/i,"").trim() : "info@pedromramon.com";
+    const wa = waA ? waA.getAttribute("href").trim() : "https://wa.me/5492617624783";
     return { email, wa };
   }
 
@@ -218,8 +218,8 @@
     if(fromDict) return fromDict;
 
     const c = readContact();
-    const email = c.email || "info@pmr-studio.com";
-    const wa = c.wa || "https://wa.me/5492612593729";
+    const email = c.email || "info@pedromramon.com";
+    const wa = c.wa || "https://wa.me/5492617624783";
 
     if(lang === "es") return `Contacto: WhatsApp ${wa} o ${email}. Contame objetivo + herramientas + tiempos. Ver: #contact`;
     if(lang === "it") return `Contatto: WhatsApp ${wa} o ${email}. Dimmi obiettivo + strumenti + tempi. Vedi: #contact`;
