@@ -294,7 +294,7 @@
     },
     {
       id: "ai",
-      triggers: ["bot","chatbot","with ai","ai bot","ai agent","use ai","con ia","de ia","usar ia","con l ia","agent","agents","agente","agentes","agenti","inteligencia artificial","intelligenza artificiale","artificial intelligence","telegram","openai","chatgpt","gemini","claude","n8n","automation","automatizacion","automatizar","automazione"],
+      triggers: ["bots","un bot","a bot","chatbot","with ai","ai bot","ai agent","use ai","con ia","de ia","usar ia","con l ia","agent","agents","agente","agentes","agenti","inteligencia artificial","intelligenza artificiale","artificial intelligence","telegram","openai","chatgpt","gemini","claude","n8n","automation","automatizacion","automatizar","automazione"],
       answer: answerAI
     }
   ];
