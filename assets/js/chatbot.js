@@ -8,7 +8,7 @@
 (function(){
   "use strict";
 
-  const $open  = document.querySelector("[data-chat-open]");
+  const $open  = document.querySelector(".chat-fab[data-chat-open]") || document.querySelector("[data-chat-open]");
   const $panel = document.querySelector("[data-chat-panel]");
   const $close = document.querySelector("[data-chat-close]");
   const $msgs  = document.querySelector("[data-chat-msgs]");
@@ -166,9 +166,9 @@
 
     const tiers = readTierInfo();
     // Expecting 3 tiers; handle gracefully if structure changes
-    const t1 = tiers[0] || { title: "One-off / Quick tasks", priceText: "$20/hour" };
-    const t2 = tiers[1] || { title: "Recurring support", priceText: "$15/hour" };
-    const t3 = tiers[2] || { title: "Long-term (custom)", priceText: "Custom" };
+    const t1 = tiers[0] || { title: "One-time work", priceText: "$25/hour" };
+    const t2 = tiers[1] || { title: "Recurring support", priceText: "$20/hour" };
+    const t3 = tiers[2] || { title: "Turnkey project", priceText: "Custom" };
 
     // Keep numbers always synced with page; phrasing localized
     if(lang === "es"){
@@ -207,10 +207,10 @@
     const fromDict = t("chat_portfolio_answer", lang);
     if(fromDict) return fromDict;
 
-    const href = readPortfolioPdfHref() || "/docs/portfolio/pmrstudio_portfolio_v3.pdf";
-    if(lang === "es") return `Service Deck (PDF): ${href}  · Ver: #portfolio`;
-    if(lang === "it") return `Service Deck (PDF): ${href}  · Vedi: #portfolio`;
-    return `Service Deck (PDF): ${href}  · See: #portfolio`;
+    const href = readPortfolioPdfHref() || "/docs/portfolio/pmrstudio_portfolio_2026.pdf";
+    if(lang === "es") return `Portfolio 2026 (PDF): ${href}  · Ver: #portfolio`;
+    if(lang === "it") return `Portfolio 2026 (PDF): ${href}  · Vedi: #portfolio`;
+    return `Portfolio 2026 (PDF): ${href}  · See: #portfolio`;
   }
 
   function answerContact(lang){
@@ -247,6 +247,10 @@
   // -------------------------
   // Knowledge base (triggers -> answer function)
   // -------------------------
+  function answerAI(lang){
+    return t("chat_ai_answer", lang) || answerServices(lang);
+  }
+
   const KB = [
     {
       id: "services",
@@ -287,6 +291,11 @@
       id: "faq",
       triggers: ["faq","questions","preguntas","domande"],
       answer: answerFAQ
+    },
+    {
+      id: "ai",
+      triggers: ["bot","chatbot","with ai","ai bot","ai agent","use ai","con ia","de ia","usar ia","con l ia","agent","agents","agente","agentes","agenti","inteligencia artificial","intelligenza artificiale","artificial intelligence","telegram","openai","chatgpt","gemini","claude","n8n","automation","automatizacion","automatizar","automazione"],
+      answer: answerAI
     }
   ];
 
@@ -383,7 +392,7 @@
     document.body.classList.remove("chat-open");
   }
 
-  $open.addEventListener("click", open);
+  document.querySelectorAll("[data-chat-open]").forEach((b) => b.addEventListener("click", open));
   $close.addEventListener("click", close);
 
   document.addEventListener("keydown", (e) => {

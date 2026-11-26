@@ -4,7 +4,7 @@ Sitio estático (HTML, CSS y JavaScript, sin build) de PMR Studio, publicado en 
 Copia de https://pmr-studio.com.
 
 ## Estructura
-- `index.html`: página principal (ES/EN/IT; los textos están en `assets/js/main.js`)
+- `index.html`: página principal (ES/EN/IT; los textos están en `assets/js/i18n.js`)
 - `legal/`: privacidad y términos
 - `assets/`: estilos, scripts e imágenes
 - `docs/portfolio/`: PDFs y vistas previas del portafolio
