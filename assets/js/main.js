@@ -11,7 +11,7 @@
   "use strict";
 
   // Helpful for verifying production is serving the new file:
-  const PMR_MAIN_VERSION = "2026-11-26a";
+  const PMR_MAIN_VERSION = "2026-11-27a";
   try { window.PMR_MAIN_VERSION = PMR_MAIN_VERSION; } catch (_) {}
 
   const $  = (sel, root = document) => root.querySelector(sel);
@@ -38,13 +38,14 @@
     // Expose i18n for other scripts (chatbot, etc.)
     try { window.PMR_I18N = I18N; } catch (_) {}
 
-    const LANGS = ["en", "es", "it"];
+    const LANGS = ["en", "es", "it", "pt"];
     const LANG_KEY = "pmr_lang";
 
     const normalizeLang = (l) => {
       const s = String(l || "").toLowerCase();
       if (s.startsWith("es")) return "es";
       if (s.startsWith("it")) return "it";
+      if (s.startsWith("pt")) return "pt";
       return "en";
     };
 

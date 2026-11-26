@@ -36,17 +36,23 @@
       hello: "Ciao — sono l’assistente di PMR. Chiedimi servizi, prezzi, lingue, pagamenti o come lavoriamo.",
       fallback: "Posso aiutarti con servizi, prezzi, lingue, pagamenti e prossimi step. Di cosa hai bisogno?",
       sendPlaceholder: "Scrivi la tua domanda…"
+    },
+    pt: {
+      hello: "Olá — sou o assistente da PMR. Pergunte sobre bots com IA, serviços, preços, pagamentos ou como trabalhamos.",
+      fallback: "Posso ajudar com serviços, preços, idiomas, pagamentos e próximos passos. Do que você precisa?",
+      sendPlaceholder: "Digite sua pergunta…"
     }
   };
 
   function currentLang(){
     const active = document.querySelector(".lang .chip.is-active");
     const dl = active?.getAttribute("data-lang");
-    if(dl === "es" || dl === "it" || dl === "en") return dl;
+    if(dl === "es" || dl === "it" || dl === "pt" || dl === "en") return dl;
 
     const l = (document.documentElement.lang || "en").toLowerCase();
     if(l.startsWith("es")) return "es";
     if(l.startsWith("it")) return "it";
+    if(l.startsWith("pt")) return "pt";
     return "en";
   }
 
@@ -174,6 +180,9 @@
     if(lang === "es"){
       return `Tarifas: ${t1.title} ${t1.priceText}, ${t2.title} ${t2.priceText}, y ${t3.title} ${t3.priceText}. Si me decís alcance + herramientas + tiempos, te propongo el punto de arranque más simple. Ver: #tiers`;
     }
+    if(lang === "pt"){
+      return `Tarifas: ${t1.title} ${t1.priceText}, ${t2.title} ${t2.priceText} e ${t3.title} ${t3.priceText}. Conte escopo + ferramentas + prazos e eu proponho o ponto de partida mais simples. Veja: #tiers`;
+    }
     if(lang === "it"){
       return `Tariffe: ${t1.title} ${t1.priceText}, ${t2.title} ${t2.priceText}, e ${t3.title} ${t3.priceText}. Se mi dai scope + strumenti + tempi, ti propongo il punto di partenza più semplice. Vedi: #tiers`;
     }
@@ -209,6 +218,7 @@
 
     const href = readPortfolioPdfHref() || "/docs/portfolio/pmrstudio_portfolio_2026.pdf";
     if(lang === "es") return `Portfolio 2026 (PDF): ${href}  · Ver: #portfolio`;
+    if(lang === "pt") return `Portfólio 2026 (PDF): ${href}  · Veja: #portfolio`;
     if(lang === "it") return `Portfolio 2026 (PDF): ${href}  · Vedi: #portfolio`;
     return `Portfolio 2026 (PDF): ${href}  · See: #portfolio`;
   }
@@ -222,6 +232,7 @@
     const wa = c.wa || "https://wa.me/5492617624783";
 
     if(lang === "es") return `Contacto: WhatsApp ${wa} o ${email}. Contame objetivo + herramientas + tiempos. Ver: #contact`;
+    if(lang === "pt") return `Contato: WhatsApp ${wa} ou ${email}. Conte objetivo + ferramentas + prazos. Veja: #contact`;
     if(lang === "it") return `Contatto: WhatsApp ${wa} o ${email}. Dimmi obiettivo + strumenti + tempi. Vedi: #contact`;
     return `Contact: WhatsApp ${wa} or ${email}. Tell me goal + tools + timeline. See: #contact`;
   }
@@ -254,47 +265,47 @@
   const KB = [
     {
       id: "services",
-      triggers: ["services","service","what do you do","what you do","help with","deliverables","servicios","servicio","que haces","qué haces","que ofreces","qué ofrecés","servizi","cosa fai","cosa offri"],
+      triggers: ["services","service","what do you do","what you do","help with","deliverables","servicios","servicio","que haces","qué haces","que ofreces","qué ofrecés","servizi","cosa fai","cosa offri","servicos","o que voce faz","o que oferece"],
       answer: answerServices
     },
     {
       id: "pricing",
-      triggers: ["pricing","price","rates","rate","hourly","cost","tiers","precios","precio","tarifa","tarifas","costo","costos","prezzi","tariffa","tariffe","costo","livelli"],
+      triggers: ["pricing","price","rates","rate","hourly","cost","tiers","precios","precio","tarifa","tarifas","costo","costos","prezzi","tariffa","tariffe","costo","livelli","preco","precos","custo","quanto custa"],
       answer: answerPricing
     },
     {
       id: "languages",
-      triggers: ["languages","language","spanish","english","italian","idiomas","idioma","español","ingles","inglés","italiano","lingue","lingua"],
+      triggers: ["languages","language","spanish","english","italian","idiomas","idioma","español","ingles","inglés","italiano","lingue","lingua","portugues","espanhol"],
       answer: answerLanguages
     },
     {
       id: "payments",
-      triggers: ["payments","pay","paypal","crypto","usdt","usdc","skrill","pagos","pago","cripto","pagamenti","pagamento"],
+      triggers: ["payments","pay","paypal","crypto","usdt","usdc","skrill","pagos","pago","cripto","pagamenti","pagamento","pagamentos","pagar"],
       answer: answerPayments
     },
     {
       id: "portfolio",
-      triggers: ["portfolio","deck","pdf","work samples","examples","ejemplos","muestras","campioni","esempi"],
+      triggers: ["portfolio","deck","pdf","work samples","examples","ejemplos","muestras","campioni","esempi","portfolio","exemplos","casos"],
       answer: answerPortfolio
     },
     {
       id: "contact",
-      triggers: ["contact","email","whatsapp","reach you","book","call","contacto","contactarte","mail","correo","contatto"],
+      triggers: ["contact","email","whatsapp","reach you","book","call","contacto","contactarte","mail","correo","contatto","contato"],
       answer: answerContact
     },
     {
       id: "process",
-      triggers: ["process","how you work","workflow","steps","next steps","proceso","como trabajan","cómo trabajas","cómo trabajamos","processo","come lavori","come lavoriamo"],
+      triggers: ["process","how you work","workflow","steps","next steps","proceso","como trabajan","cómo trabajas","cómo trabajamos","processo","come lavori","come lavoriamo","como trabalha","como trabalham","como trabalhamos"],
       answer: answerProcess
     },
     {
       id: "faq",
-      triggers: ["faq","questions","preguntas","domande"],
+      triggers: ["faq","questions","preguntas","domande","perguntas"],
       answer: answerFAQ
     },
     {
       id: "ai",
-      triggers: ["bots","un bot","a bot","chatbot","with ai","ai bot","ai agent","use ai","con ia","de ia","usar ia","con l ia","agent","agents","agente","agentes","agenti","inteligencia artificial","intelligenza artificiale","artificial intelligence","telegram","openai","chatgpt","gemini","claude","n8n","automation","automatizacion","automatizar","automazione"],
+      triggers: ["bots","un bot","a bot","chatbot","with ai","ai bot","ai agent","use ai","con ia","de ia","usar ia","con l ia","agent","agents","agente","agentes","agenti","inteligencia artificial","intelligenza artificiale","artificial intelligence","telegram","openai","chatgpt","gemini","claude","n8n","automation","automatizacion","automatizar","automazione","automacao","com ia","inteligencia artificial"],
       answer: answerAI
     }
   ];
