@@ -14,7 +14,7 @@ window.PMR_I18N = {
     nav_faq: "FAQ",
     nav_contact: "Contact",
 
-    hero_pill: "Full Stack & AI Automation · Bots · Custom Systems · ES/EN/IT",
+    hero_pill: "Full Stack & AI Automation · Bots · Custom Systems · ES/EN/IT/PT",
     hero_h1: "AI bots and custom systems that save your team hours every week.",
     hero_lead: "I build AI agents for WhatsApp and Telegram that answer, take orders and book appointments 24/7, and the automation and systems behind them, connected to your CRM or Google Sheets.",
     hero_micro: "Scalable solutions that cut operational hours: from a rescued spreadsheet to a full ERP, delivered turnkey.",
@@ -29,7 +29,7 @@ window.PMR_I18N = {
     hero_card_b4: "Hands over to your team when a person is really needed.",
     hero_kpi1_l: "Immediate answers, also outside business hours",
     hero_kpi2_l: "Operational load on the sales team",
-    hero_kpi3_l: "Bots and delivery in three languages",
+    hero_kpi3_l: "Bots and delivery in four languages",
 
     proof_title: "Results from real projects",
     proof_sub: "Numbers measured on delivered work, not promises.",
@@ -150,7 +150,7 @@ window.PMR_I18N = {
     p1_b: "1. Diagnosis & design:",
     p1: "a quick survey of your current flow to find the bottlenecks before writing a single line of code.",
     p2_b: "2. Iterative development:",
-    p2: "agile build with visible progress from the first week, tests in a real environment and fluid communication (ES / EN C2 / IT).",
+    p2: "agile build with visible progress from the first week, tests in a real environment and fluid communication (ES / EN C2 / IT / PT).",
     p3_b: "3. Turnkey delivery:",
     p3: "go-live, clear documentation and training so your team uses the tool from day one.",
 
@@ -167,7 +167,7 @@ window.PMR_I18N = {
     faq_q5: "How does pricing work?",
     faq_a5: "$25/hour for one-time work and $20/hour for recurring support. Bots, ERPs and larger builds are quoted per project with milestones.",
     faq_q6: "Languages and payments?",
-    faq_a6: "I work in Spanish, English and Italian. Payments by PayPal, Skrill or crypto (USDT/USDC/DAI).",
+    faq_a6: "I work in Spanish, English, Italian and Portuguese. Payments by PayPal, Skrill or crypto (USDT/USDC/DAI).",
 
     contact_title: "Contact",
     contact_desc: "Tell me what you want to automate, the tools you use today and your timeline. I'll reply with a simple plan and the best starting option.",
@@ -178,7 +178,7 @@ window.PMR_I18N = {
     contact_loc: "Mendoza, Argentina (GMT/UTC -03)",
     pay_b: "Payments:",
     pay_v: "PayPal · Skrill · Crypto (USDT, USDC, DAI)",
-    langs_line: "Languages: Spanish (Native) · English (C2) · Italian (B2)",
+    langs_line: "Languages: Spanish (Native) · English (C2) · Italian (B2) · Portuguese",
     contact_fast: "Quick message",
     contact_fast_desc: "WhatsApp or email, whichever you prefer.",
     response_time: "Response time: within 24 hours.",
@@ -206,7 +206,7 @@ window.PMR_I18N = {
     nav_faq: "FAQ",
     nav_contact: "Contacto",
 
-    hero_pill: "Full Stack & AI Automation · Bots · Sistemas a medida · ES/EN/IT",
+    hero_pill: "Full Stack & AI Automation · Bots · Sistemas a medida · ES/EN/IT/PT",
     hero_h1: "Bots con IA y sistemas a medida que le ahorran horas a tu equipo cada semana.",
     hero_lead: "Construyo agentes de IA para WhatsApp y Telegram que atienden, toman pedidos y agendan turnos 24/7, junto con la automatización y los sistemas que hay detrás, conectados a tu CRM o Google Sheets.",
     hero_micro: "Soluciones escalables que ahorran horas operativas: desde una planilla rescatada hasta un ERP completo, con entrega llave en mano.",
@@ -221,7 +221,7 @@ window.PMR_I18N = {
     hero_card_b4: "Deriva a tu equipo cuando de verdad hace falta una persona.",
     hero_kpi1_l: "Respuesta inmediata, también fuera de horario",
     hero_kpi2_l: "Carga operativa del equipo comercial",
-    hero_kpi3_l: "Bots y entregas en tres idiomas",
+    hero_kpi3_l: "Bots y entregas en cuatro idiomas",
 
     proof_title: "Resultados de proyectos reales",
     proof_sub: "Números medidos en trabajos entregados, no promesas.",
@@ -342,7 +342,7 @@ window.PMR_I18N = {
     p1_b: "1. Diagnóstico y diseño:",
     p1: "relevamiento rápido de tu flujo actual para detectar cuellos de botella antes de escribir una sola línea de código.",
     p2_b: "2. Desarrollo iterativo:",
-    p2: "construcción ágil con avances visibles desde la primera semana, pruebas en entorno real y comunicación fluida (ES / EN C2 / IT).",
+    p2: "construcción ágil con avances visibles desde la primera semana, pruebas en entorno real y comunicación fluida (ES / EN C2 / IT / PT).",
     p3_b: "3. Entrega llave en mano:",
     p3: "puesta en producción, documentación clara y capacitación para que tu equipo use la herramienta desde el día uno.",
 
@@ -359,7 +359,7 @@ window.PMR_I18N = {
     faq_q5: "¿Cómo son los precios?",
     faq_a5: "USD 25/hora para trabajos puntuales y USD 20/hora para soporte recurrente. Bots, ERPs y desarrollos grandes se cotizan por proyecto, con hitos.",
     faq_q6: "¿Idiomas y pagos?",
-    faq_a6: "Trabajo en español, inglés e italiano. Pagos por PayPal, Skrill o cripto (USDT/USDC/DAI).",
+    faq_a6: "Trabajo en español, inglés, italiano y portugués. Pagos por PayPal, Skrill o cripto (USDT/USDC/DAI).",
 
     contact_title: "Contacto",
     contact_desc: "Contame qué querés automatizar, qué herramientas usás hoy y tus tiempos. Te respondo con un plan simple y la mejor opción para empezar.",
@@ -370,7 +370,7 @@ window.PMR_I18N = {
     contact_loc: "Mendoza, Argentina (GMT/UTC -03)",
     pay_b: "Pagos:",
     pay_v: "PayPal · Skrill · Cripto (USDT, USDC, DAI)",
-    langs_line: "Idiomas: Español (nativo) · Inglés (C2) · Italiano (B2)",
+    langs_line: "Idiomas: Español (nativo) · Inglés (C2) · Italiano (B2) · Portugués",
     contact_fast: "Mensaje rápido",
     contact_fast_desc: "WhatsApp o email, como prefieras.",
     response_time: "Tiempo de respuesta: dentro de 24 horas.",
@@ -398,7 +398,7 @@ window.PMR_I18N = {
     nav_faq: "FAQ",
     nav_contact: "Contatto",
 
-    hero_pill: "Full Stack & AI Automation · Bot · Sistemi su misura · ES/EN/IT",
+    hero_pill: "Full Stack & AI Automation · Bot · Sistemi su misura · ES/EN/IT/PT",
     hero_h1: "Bot con IA e sistemi su misura che fanno risparmiare ore al tuo team ogni settimana.",
     hero_lead: "Costruisco agenti IA per WhatsApp e Telegram che rispondono, prendono ordini e fissano appuntamenti 24/7, insieme all'automazione e ai sistemi che li sostengono, collegati al tuo CRM o a Google Sheets.",
     hero_micro: "Soluzioni scalabili che riducono le ore operative: da un foglio di calcolo recuperato a un ERP completo, con consegna chiavi in mano.",
@@ -413,7 +413,7 @@ window.PMR_I18N = {
     hero_card_b4: "Passa la conversazione al tuo team quando serve davvero una persona.",
     hero_kpi1_l: "Risposta immediata, anche fuori orario",
     hero_kpi2_l: "Carico operativo del team commerciale",
-    hero_kpi3_l: "Bot e consegne in tre lingue",
+    hero_kpi3_l: "Bot e consegne in quattro lingue",
 
     proof_title: "Risultati di progetti reali",
     proof_sub: "Numeri misurati su lavori consegnati, non promesse.",
@@ -534,7 +534,7 @@ window.PMR_I18N = {
     p1_b: "1. Diagnosi e progettazione:",
     p1: "analisi rapida del tuo flusso attuale per individuare i colli di bottiglia prima di scrivere una sola riga di codice.",
     p2_b: "2. Sviluppo iterativo:",
-    p2: "costruzione agile con progressi visibili dalla prima settimana, test in ambiente reale e comunicazione fluida (ES / EN C2 / IT).",
+    p2: "costruzione agile con progressi visibili dalla prima settimana, test in ambiente reale e comunicazione fluida (ES / EN C2 / IT / PT).",
     p3_b: "3. Consegna chiavi in mano:",
     p3: "messa in produzione, documentazione chiara e formazione perché il tuo team usi lo strumento dal primo giorno.",
 
@@ -551,7 +551,7 @@ window.PMR_I18N = {
     faq_q5: "Come funzionano i prezzi?",
     faq_a5: "25 USD/ora per lavori una tantum e 20 USD/ora per il supporto ricorrente. Bot, ERP e sviluppi più grandi si quotano a progetto, con milestone.",
     faq_q6: "Lingue e pagamenti?",
-    faq_a6: "Lavoro in spagnolo, inglese e italiano. Pagamenti con PayPal, Skrill o crypto (USDT/USDC/DAI).",
+    faq_a6: "Lavoro in spagnolo, inglese, italiano e portoghese. Pagamenti con PayPal, Skrill o crypto (USDT/USDC/DAI).",
 
     contact_title: "Contatto",
     contact_desc: "Dimmi cosa vuoi automatizzare, quali strumenti usi oggi e i tuoi tempi. Ti rispondo con un piano semplice e l'opzione migliore per iniziare.",
@@ -562,7 +562,7 @@ window.PMR_I18N = {
     contact_loc: "Mendoza, Argentina (GMT/UTC -03)",
     pay_b: "Pagamenti:",
     pay_v: "PayPal · Skrill · Crypto (USDT, USDC, DAI)",
-    langs_line: "Lingue: Spagnolo (madrelingua) · Inglese (C2) · Italiano (B2)",
+    langs_line: "Lingue: Spagnolo (madrelingua) · Inglese (C2) · Italiano (B2) · Portoghese",
     contact_fast: "Messaggio rapido",
     contact_fast_desc: "WhatsApp o email, come preferisci.",
     response_time: "Tempo di risposta: entro 24 ore.",
@@ -590,7 +590,7 @@ window.PMR_I18N = {
     nav_faq: "FAQ",
     nav_contact: "Contato",
 
-    hero_pill: "Full Stack & AI Automation · Bots · Sistemas sob medida · ES/EN/IT",
+    hero_pill: "Full Stack & AI Automation · Bots · Sistemas sob medida · ES/EN/IT/PT",
     hero_h1: "Bots com IA e sistemas sob medida que poupam horas da sua equipe toda semana.",
     hero_lead: "Construo agentes de IA para WhatsApp e Telegram que atendem, recebem pedidos e agendam horários 24/7, junto com a automação e os sistemas por trás, conectados ao seu CRM ou ao Google Sheets.",
     hero_micro: "Soluções escaláveis que reduzem horas operacionais: de uma planilha recuperada a um ERP completo, com entrega chave na mão.",
@@ -605,7 +605,7 @@ window.PMR_I18N = {
     hero_card_b4: "Passa a conversa para a sua equipe quando uma pessoa é realmente necessária.",
     hero_kpi1_l: "Resposta imediata, também fora do horário comercial",
     hero_kpi2_l: "Carga operacional da equipe comercial",
-    hero_kpi3_l: "Bots e entregas em três idiomas",
+    hero_kpi3_l: "Bots e entregas em quatro idiomas",
 
     proof_title: "Resultados de projetos reais",
     proof_sub: "Números medidos em trabalhos entregues, não promessas.",
@@ -726,7 +726,7 @@ window.PMR_I18N = {
     p1_b: "1. Diagnóstico e desenho:",
     p1: "levantamento rápido do seu fluxo atual para encontrar os gargalos antes de escrever uma única linha de código.",
     p2_b: "2. Desenvolvimento iterativo:",
-    p2: "construção ágil com avanços visíveis desde a primeira semana, testes em ambiente real e comunicação fluida (ES / EN C2 / IT).",
+    p2: "construção ágil com avanços visíveis desde a primeira semana, testes em ambiente real e comunicação fluida (ES / EN C2 / IT / PT).",
     p3_b: "3. Entrega chave na mão:",
     p3: "entrada em produção, documentação clara e treinamento para que sua equipe use a ferramenta desde o primeiro dia.",
 
@@ -743,7 +743,7 @@ window.PMR_I18N = {
     faq_q5: "Como funcionam os preços?",
     faq_a5: "USD 25/hora para trabalhos pontuais e USD 20/hora para suporte recorrente. Bots, ERPs e projetos maiores são orçados por projeto, com marcos.",
     faq_q6: "Idiomas e pagamentos?",
-    faq_a6: "Trabalho em espanhol, inglês e italiano. Pagamentos por PayPal, Skrill ou cripto (USDT/USDC/DAI).",
+    faq_a6: "Trabalho em espanhol, inglês, italiano e português. Pagamentos por PayPal, Skrill ou cripto (USDT/USDC/DAI).",
 
     contact_title: "Contato",
     contact_desc: "Conte o que você quer automatizar, quais ferramentas usa hoje e seus prazos. Respondo com um plano simples e a melhor opção para começar.",
@@ -754,7 +754,7 @@ window.PMR_I18N = {
     contact_loc: "Mendoza, Argentina (GMT/UTC -03)",
     pay_b: "Pagamentos:",
     pay_v: "PayPal · Skrill · Cripto (USDT, USDC, DAI)",
-    langs_line: "Idiomas: Espanhol (nativo) · Inglês (C2) · Italiano (B2)",
+    langs_line: "Idiomas: Espanhol (nativo) · Inglês (C2) · Italiano (B2) · Português",
     contact_fast: "Mensagem rápida",
     contact_fast_desc: "WhatsApp ou email, como preferir.",
     response_time: "Tempo de resposta: em até 24 horas.",
