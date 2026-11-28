@@ -19,3 +19,10 @@ RewriteRule ^ https://pmrstudio.site%{REQUEST_URI} [L,R=301]
 <FilesMatch "\.(md|bak|old|tmp|log)$">
   Require all denied
 </FilesMatch>
+
+# Las páginas HTML siempre se revalidan, para que los cambios se vean al instante
+<IfModule mod_headers.c>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>

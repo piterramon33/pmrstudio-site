@@ -197,9 +197,9 @@
     const line = t("langs_line", lang);
     if(line) return line;
 
-    if(lang === "es") return "Idiomas: Español (nativo) · Inglés (C2) · Italiano (B2) · Portugués.";
-    if(lang === "it") return "Lingue: Spagnolo (madrelingua) · Inglese (C2) · Italiano (B2) · Portoghese.";
-    return "Languages: Spanish (Native) · English (C2) · Italian (B2) · Portuguese.";
+    if(lang === "es") return "Idiomas: Español (nativo) · Inglés (C2) · Italiano (C1) · Portugués (B1).";
+    if(lang === "it") return "Lingue: Spagnolo (madrelingua) · Inglese (C2) · Italiano (C1) · Portoghese (B1).";
+    return "Languages: Spanish (Native) · English (C2) · Italian (C1) · Portuguese (B1).";
   }
 
   function answerPayments(lang){
